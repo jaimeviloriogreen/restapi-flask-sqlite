@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="main-title">Simple REST Api with Flask & SQLite</h1>
+    <hr>
+    <h3>This is what you can do:</h3>
+    <section class="methods">
+        <a href="/products" target="_blank"><span>[GET]</span> all products</a>
+        <a href="/product/<string:name>" target="_blank"><span>[GET]</span> one product by name</a>
+        <a href="/product/<string:name>" target="_blank"><span>[DELETE]</span> one product by name</a>
+        <a href="/product" target="_blank"><span>[POST]</span> a product</a>
+        <a href="/product" target="_blank"><span>[PUT]</span> a product</a>
+    </section>
+{% endblock %}
